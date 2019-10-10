@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,900&display=swap" rel="stylesheet">
+
+
+    <!-- Icons -->
+    <link href="css/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/weather-icons.css">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+    
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-logo left">
+               <a href=""><img src="img/logo.png" alt="weather logo" class="logo"></a>
+            </div>
+            <form class="header__top-form left search">
+                <input type="text" name="search-field" class="search-field left" placeholder="Search Cities...">
+                <button class="btn btn-search left" type="submit">
+                       <i class="fas fa-search"></i>  search
+                </button>
+            </form>
+            <div class="header__top-recent left">
+                <div class="header__text">
+                    <div class="header__text-primary">
+                       <p>Get Current Weather <span>&amp;</span> </p>
+                    </div>
+                    <div class="header__text-secondary">
+                       <p>Weather forecast for five days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__date">
+        </div>
+    </header>
+
+    <section class="section-cards">
+        <h1></h1>
+        <!-- <div class="row">
+            <div class="col-1-of-3">
+
+                 <div class="card">
+                     
+                    <div class="card__top">
+                        <div class="card__picture card__picture--1">
+                            &nbsp;
+                        </div>
+                        <div class="card__temp">
+                            <p class="temp-value"> 218 &#8451;</p>
+                        </div>
+                        <div class="card__icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <div class="card__city">
+                            <p> <i class="fas fa-map-marker-alt"></i> London, UK</p>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <ul class="card__bottom--weather">
+                            <li class="description">
+                                <p class="title">Description</p>
+                                <p class="Description-status right">Broken Clouds</p>
+                            </li>
+                            <li class="temp-max">
+                                <p class="title">Maximum Temperature</p>
+                                <p class="temp-max-status right"> <i class="fas fa-temperature-high"></i>218 &#8451;</p>
+                            </li>
+                            <li class="temp-min">
+                                <p class="title">Minimum Temperature</p>
+                                <p class="temp-min-status right"> <i class="fas fa-temperature-low"></i>  218 &#8451;</p>
+                            </li>
+                            <li class="wind-speed">
+                                <p class="title">wind-speed</p>
+                                <p class="wind-speed-status right"><i class="fas fa-wind"></i> 2.6 m/s</p>
+                            </li>
+                            <li class="wind-direction">
+                                <p class="title">wind-direction</p>
+                                <p class="wind-direction-status right"> <i class="fas fa-compass"></i>122 &#176;</p>
+                            </li>
+                            <li class="pressure">
+                                <p class="title">pressure</p>
+                                <p class="pressure-status right"> 1016 hPa</p>
+                            </li>
+                            <li class="humidity">
+                                <p class="title">humidity</p>
+                                <p class="humidity-status right"><i class="far fa-dewpoint"></i> 94 &#37;</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card__forcast">
+                        <div class="btn btn-forecast">
+                            <p>5 days weather forecast <i class="fas fa-link"></i></p>
+                      </div>
+                    </div>
+
+                </div>  
+            </div>
+            <div class="col-1-of-3">
+                 <div class="card">
+                    
+                    <div class="card__top">
+                        <div class="card__picture card__picture--2">
+                            &nbsp;
+                        </div>
+                        <div class="card__temp">
+                            <p class="temp-value"> 218 &#8451;</p>
+                        </div>
+                        <div class="card__icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <div class="card__city">
+                            <p> <i class="fas fa-map-marker-alt"></i> New York, USA</p>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <ul class="card__bottom--weather">
+                            <li class="description">
+                                <p class="title">Description</p>
+                                <p class="Description-status right">Broken Clouds</p>
+                            </li>
+                            <li class="temp-max">
+                                <p class="title">Maximum Temperature</p>
+                                <p class="temp-max-status right"> <i class="fas fa-temperature-high"></i>218 &#8451;</p>
+                            </li>
+                            <li class="temp-min">
+                                <p class="title">Minimum Temperature</p>
+                                <p class="temp-min-status right"> <i class="fas fa-temperature-low"></i>  218 &#8451;</p>
+                            </li>
+                            <li class="wind-speed">
+                                <p class="title">wind-speed</p>
+                                <p class="wind-speed-status right"><i class="fas fa-wind"></i> 2.6 m/s</p>
+                            </li>
+                            <li class="wind-direction">
+                                <p class="title">wind-direction</p>
+                                <p class="wind-direction-status right"> <i class="fas fa-compass"></i>122 &#176;</p>
+                            </li>
+                            <li class="pressure">
+                                <p class="title">pressure</p>
+                                <p class="pressure-status right"> 1016 hPa</p>
+                            </li>
+                            <li class="humidity">
+                                <p class="title">humidity</p>
+                                <p class="humidity-status right"><i class="far fa-dewpoint"></i> 94 &#37;</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card__forcast">
+                        <div class="btn btn-forecast">
+                            <p>5 days weather forecast <i class="fas fa-link"></i></p>
+                      </div>
+                    </div>
+
+                </div>  
+             </div>
+            <div class="col-1-of-3">
+
+                 <div class="card">
+                    
+                    <div class="card__top">
+                        <div class="card__picture card__picture--3">
+                            &nbsp;
+                        </div>
+                        <div class="card__temp">
+                            <p class="temp-value"> 218 &#8451;</p>
+                        </div>
+                        <div class="card__icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <div class="card__city">
+                            <p> <i class="fas fa-map-marker-alt"></i> Lagos, NG</p>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <ul class="card__bottom--weather">
+                            <li class="description">
+                                <p class="title">Description</p>
+                                <p class="Description-status right">Broken Clouds</p>
+                            </li>
+                            <li class="temp-max">
+                                <p class="title">Maximum Temperature</p>
+                                <p class="temp-max-status right"> <i class="fas fa-temperature-high"></i>218 &#8451;</p>
+                            </li>
+                            <li class="temp-min">
+                                <p class="title">Minimum Temperature</p>
+                                <p class="temp-min-status right"> <i class="fas fa-temperature-low"></i>  218 &#8451;</p>
+                            </li>
+                            <li class="wind-speed">
+                                <p class="title">wind-speed</p>
+                                <p class="wind-speed-status right"><i class="fas fa-wind"></i> 2.6 m/s</p>
+                            </li>
+                            <li class="wind-direction">
+                                <p class="title">wind-direction</p>
+                                <p class="wind-direction-status right"> <i class="fas fa-compass"></i>122 &#176;</p>
+                            </li>
+                            <li class="pressure">
+                                <p class="title">pressure</p>
+                                <p class="pressure-status right"> 1016 hPa</p>
+                            </li>
+                            <li class="humidity">
+                                <p class="title">humidity</p>
+                                <p class="humidity-status right"><i class="far fa-dewpoint"></i> 94 &#37;</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card__forcast">
+                        <div class="btn btn-forecast">
+                            <p>5 days weather forecast <i class="fas fa-link"></i></p>
+                      </div>
+                    </div>
+
+                </div>  
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-3">
+
+
+                 <div class="card">
+                    
+                    <div class="card__top">
+                        <div class="card__picture card__picture--4">
+                            &nbsp;
+                        </div>
+                        <div class="card__temp">
+                            <p class="temp-value"> 218 &#8451;</p>
+                        </div>
+                        <div class="card__icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <div class="card__city">
+                            <p> <i class="fas fa-map-marker-alt"></i> Paris, FR</p>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <ul class="card__bottom--weather">
+                            <li class="description">
+                                <p class="title">Description</p>
+                                <p class="Description-status right">Broken Clouds</p>
+                            </li>
+                            <li class="temp-max">
+                                <p class="title">Maximum Temperature</p>
+                                <p class="temp-max-status right"> <i class="fas fa-temperature-high"></i>218 &#8451;</p>
+                            </li>
+                            <li class="temp-min">
+                                <p class="title">Minimum Temperature</p>
+                                <p class="temp-min-status right"> <i class="fas fa-temperature-low"></i>  218 &#8451;</p>
+                            </li>
+                            <li class="wind-speed">
+                                <p class="title">wind-speed</p>
+                                <p class="wind-speed-status right"><i class="fas fa-wind"></i> 2.6 m/s</p>
+                            </li>
+                            <li class="wind-direction">
+                                <p class="title">wind-direction</p>
+                                <p class="wind-direction-status right"> <i class="fas fa-compass"></i>122 &#176;</p>
+                            </li>
+                            <li class="pressure">
+                                <p class="title">pressure</p>
+                                <p class="pressure-status right"> 1016 hPa</p>
+                            </li>
+                            <li class="humidity">
+                                <p class="title">humidity</p>
+                                <p class="humidity-status right"><i class="far fa-dewpoint"></i> 94 &#37;</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card__forcast">
+                        <div class="btn btn-forecast">
+                            <p>5 days weather forecast <i class="fas fa-link"></i></p>
+                      </div>
+                    </div>
+
+                </div>  
+            </div>
+            <div class="col-1-of-3">
+                 <div class="card">
+                    
+                    <div class="card__top">
+                        <div class="card__picture card__picture--5">
+                            &nbsp;
+                        </div>
+                        <div class="card__temp">
+                            <p class="temp-value"> 218 &#8451;</p>
+                        </div>
+                        <div class="card__icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <div class="card__city">
+                            <p> <i class="fas fa-map-marker-alt"></i> Ibadan, NG</p>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <ul class="card__bottom--weather">
+                            <li class="description">
+                                <p class="title">Description</p>
+                                <p class="Description-status right">Broken Clouds</p>
+                            </li>
+                            <li class="temp-max">
+                                <p class="title">Maximum Temperature</p>
+                                <p class="temp-max-status right"> <i class="fas fa-temperature-high"></i>218 &#8451;</p>
+                            </li>
+                            <li class="temp-min">
+                                <p class="title">Minimum Temperature</p>
+                                <p class="temp-min-status right"> <i class="fas fa-temperature-low"></i>  218 &#8451;</p>
+                            </li>
+                            <li class="wind-speed">
+                                <p class="title">wind-speed</p>
+                                <p class="wind-speed-status right"><i class="fas fa-wind"></i> 2.6 m/s</p>
+                            </li>
+                            <li class="wind-direction">
+                                <p class="title">wind-direction</p>
+                                <p class="wind-direction-status right"> <i class="fas fa-compass"></i>122 &#176;</p>
+                            </li>
+                            <li class="pressure">
+                                <p class="title">pressure</p>
+                                <p class="pressure-status right"> 1016 hPa</p>
+                            </li>
+                            <li class="humidity">
+                                <p class="title">humidity</p>
+                                <p class="humidity-status right"><i class="far fa-dewpoint"></i> 94 &#37;</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card__forcast">
+                        <div class="btn btn-forecast">
+                            <p>5 days weather forecast <i class="fas fa-link"></i></p>
+                      </div>
+                    </div>
+
+                </div> 
+             </div>
+            <div class="col-1-of-3">
+                 <div class="card">
+                     <div class="loader">
+                        <i class="fas fa-spinner loader__spinner"></i>
+                    </div>  
+                     <div class="card__top">
+                        <div class="card__picture card__picture--6">
+                            &nbsp;
+                        </div>
+                        <div class="card__temp">
+                            <p class="temp-value"> 218 &#8451;</p>
+                        </div>
+                        <div class="card__icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <div class="card__city">
+                            <p> <i class="fas fa-map-marker-alt"></i> Dubai, UAE</p>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <ul class="card__bottom--weather">
+                            <li class="description">
+                                <p class="title">Description</p>
+                                <p class="Description-status right">Broken Clouds</p>
+                            </li>
+                            <li class="temp-max">
+                                <p class="title">Maximum Temperature</p>
+                                <p class="temp-max-status right"> <i class="fas fa-temperature-high"></i>218 &#8451;</p>
+                            </li>
+                            <li class="temp-min">
+                                <p class="title">Minimum Temperature</p>
+                                <p class="temp-min-status right"> <i class="fas fa-temperature-low"></i>  218 &#8451;</p>
+                            </li>
+                            <li class="wind-speed">
+                                <p class="title">wind-speed</p>
+                                <p class="wind-speed-status right"><i class="fas fa-wind"></i> 2.6 m/s</p>
+                            </li>
+                            <li class="wind-direction">
+                                <p class="title">wind-direction</p>
+                                <p class="wind-direction-status right"> <i class="fas fa-compass"></i>122 &#176;</p>
+                            </li>
+                            <li class="pressure">
+                                <p class="title">pressure</p>
+                                <p class="pressure-status right"> 1016 hPa</p>
+                            </li>
+                            <li class="humidity">
+                                <p class="title">humidity</p>
+                                <p class="humidity-status right"><i class="far fa-dewpoint"></i> 94 &#37;</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card__forcast">
+                        <div class="btn btn-forecast">
+                            <p>5 days weather forecast <i class="fas fa-link"></i></p>
+                      </div>
+                    </div>
+                     
+                </div> 
+            </div>
+
+        </div> -->
+    </section>
+    <section class="section-forecast">
+
+        <!-- <div class="row">
+            <div class="col-1-of-3">
+                 <div class="card">
+                    <h3 class="current">Current Weather</h3>
+                    <div class="card__top">
+                        <div class="card__picture card__picture--sky">
+                            &nbsp;
+                        </div>
+                        <div class="card__temp">
+                            <p class="temp-value"> 218 &#8451;</p>
+                        </div>
+                        <div class="card__icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <div class="card__city">
+                            <p> <i class="fas fa-map-marker-alt"></i> London, UK</p>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <ul class="card__bottom--weather">
+                            <li class="description">
+                                <p class="title">Description</p>
+                                <p class="Description-status right">Broken Clouds</p>
+                            </li>
+                            <li class="temp-max">
+                                <p class="title">Maximum Temperature</p>
+                                <p class="temp-max-status right"> <i class="fas fa-temperature-high"></i>218 &#8451;</p>
+                            </li>
+                            <li class="temp-min">
+                                <p class="title">Minimum Temperature</p>
+                                <p class="temp-min-status right"> <i class="fas fa-temperature-low"></i>  218 &#8451;</p>
+                            </li>
+                            <li class="wind-speed">
+                                <p class="title">wind-speed</p>
+                                <p class="wind-speed-status right"><i class="fas fa-wind"></i> 2.6 m/s</p>
+                            </li>
+                            <li class="wind-direction">
+                                <p class="title">wind-direction</p>
+                                <p class="wind-direction-status right"> <i class="fas fa-compass"></i>122 &#176;</p>
+                            </li>
+                            <li class="pressure">
+                                <p class="title">pressure</p>
+                                <p class="pressure-status right"> 1016 hPa</p>
+                            </li>
+                            <li class="humidity">
+                                <p class="title">humidity</p>
+                                <p class="humidity-status right"><i class="far fa-dewpoint"></i> 94 &#37;</p>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div> 
+            </div>
+            <div class="new-col-2-of-3 new-forecast">
+                <div class="forecast">
+                         <div class="forecast__header current">Weather Forecast</div>
+                        <div class="forecast__cur">
+                            <div class="forecast__cur-prev left btn">
+                                <p class="prec"> <span><i class="fas fa-backward"></i></span> Prev</p>
+                            </div>
+                            <div class="forecast__cur-next left btn">
+                                <p class="prec"> Next <span><i class="fas fa-forward"></i></span></p>
+                            </div>
+                        </div>
+                        <div class="forecast__content">
+                                    <div class="forecast__top">
+                                        <div class="forecast__day-time left">
+                                                    <p class="forecast__date">24, Aug</p>
+                                                </div>
+                                        <div class="forecast__menu left">
+                                            <ul class="forecast__menu-ul">
+                                                <li class="forecast__menu-li active">Day</li>                                    
+                                                <li class="forecast__menu-li">Night</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="forecast__weather">
+                                        <div class="forecast__step">
+                                            <div class="forecast__cloud left">
+                                                <p class="forecast__cloud--content">27&#8451; <span><i class="fas fa-cloud-rain"></i></span></p>
+                                            </div>
+                                            <div class="forecast__description left">
+                                                <p class="forecast__description--content">Broken Clouds</p>
+                                            </div>
+                                        </div>
+                                        <div class="forecast__step">
+                                            <div class="forecast__max-temp left">
+                                                <p>Max Temperature 27&#8451;</p>
+                                                <p>Min Temperature 27&#8451;</p>
+                                            </div>
+                                            <div class="forecast__humidity left">
+                                                <p>Humidity 94&#37;</p>
+                                            </div>
+                                        </div>
+                                        <div class="forecast__step">
+                                            <div class="forecast__presure left">
+                                                <p>Pressure 1016 hPa</p>
+                                            </div>
+                                            <div class="forecast__winde">
+                                                <p>Wind 94 2.6m/s, 122&#176;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div> 
+
+                </div>
+
+
+            </div>
+        </div> -->
+    </section>
+    <div class="section--footer">
+        <footer>    
+            <form class="header__top-form left search">
+                <input type="text" name="search-field" class="search-field search-field2 left" placeholder="Search Cities...">
+                <button class="btn btn-search left" type="submit">
+                       <i class="fas fa-search"></i>  search
+                </button>
+            </form>
+
+            <div class="social">
+                    <a href="https://twitter.com/olusamayor" target="_blank">
+                        <i class="fab fa-twitter twitter"> <span class="twitter__name"> Olusamayor</span></i>
+                    </a>
+
+                    <i class="fas fa-envelope-square mail"> <span class="mail__name">olumorinsammy@gmail.com</span></i>
+            </div>
+
+
+
+
+        </footer>
+    </div>
+
+    <!-- <section class="grid-test">
+        <div class="row">
+            <div class="col-1-of-2">
+                col-1-of-2
+            </div>
+            <div class="col-1-of-2">
+                col-1-of-2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-2-of-3">
+                col-2-of-3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-2-of-4">
+                col-2-of-4
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-3-of-4">
+                col-3-of-4
+            </div>
+        </div>
+    </section> -->
+<!-- <script src="index.js"></script> -->
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>

@@ -1,0 +1,36 @@
+
+footer a{
+    text-decoration: none;
+}
+.twitter{
+    font-size: 3rem;
+    color: $deep-blue-2;
+    margin-bottom: .5rem;
+    display: block;
+    &__name{
+        font-size: 2rem;
+        color: $color-white;
+        letter-spacing: .2rem;
+    }
+}
+.mail{
+    font-size: 2rem; 
+    // font-weight: 500;
+    color: $color-red;
+    &__name{
+        font-size: 1.5rem;
+        color: $color-white;
+        font-weight: 200;
+    }
+    @include respond(small-phone){
+        margin-left: 20rem;  
+        margin-top: 3rem;
+    }
+}
+// .social{
+//     margin-left: 6rem;
+// }
+
+
+
+

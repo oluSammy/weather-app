@@ -1,0 +1,120 @@
+.card, .forecast{
+    //  padding-top: 5rem;
+    //  padding-bottom: 5rem;
+    // -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	// -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    //  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    //box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+    @include respond(big-phone){
+        padding-bottom: 2rem;
+    }
+    &__top{
+        border-radius: 2rem;
+        border-radius: 10px; 
+        position: relative;                              
+    }
+    &__picture{
+        height: 20rem;
+        background-size: cover;
+        background-blend-mode: color;
+        &--1{
+            background-image: linear-gradient(to right bottom, $deep-blue-1, $deep-blue-2),
+                              url(../img/london.jpg);
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom, $deep-blue-1, $deep-blue-2),
+                              url(../img/new-york.jpg);
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom, $deep-blue-1, $deep-blue-2),
+                              url(../img/lagos.jpg);
+        }
+        &--4{
+            background-image: linear-gradient(to right bottom, $deep-blue-1, $deep-blue-2),
+                              url(../img/paris.jpg);
+        }
+        &--5{
+            background-image: linear-gradient(to right bottom, $deep-blue-1, $deep-blue-2),
+                              url(../img/ibadan.jpg);
+        }
+        &--6{
+            background-image: linear-gradient(to right bottom, $deep-blue-1, $deep-blue-2),
+                              url(../img/dubai.jpg);
+        }
+        &--sky{
+            background-image: linear-gradient(to right bottom, $deep-blue-1, $deep-blue-2),
+                              url(../img/sky.jpg); 
+        }
+    }
+
+    &__temp{
+        & p{ 
+            font-size: 3rem;
+            font-weight: 300;
+            color: $color-white;
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+        }
+    }
+    &__icon{
+        & img{  
+             position: absolute;
+            top: 0;
+            left: 20rem;
+            width: 11rem;
+        }
+    }
+    &__city{
+        & p{
+            font-size: 3rem;
+            font-weight: 400;
+            color: $color-white;
+            position: absolute;
+            top: 15rem;
+            left: 2rem; 
+        }
+    }
+    &__bottom{
+
+        & ul li{
+            @include clearfix;
+            list-style-type: none;                     
+        }
+        & ul li:nth-child(even){
+            background: $deep-blue-3;
+        }
+        &--weather{
+            border: 1px solid $color-bluer;
+            padding: 1rem;
+        }
+    }
+}
+.title{
+    float: left;
+    font-size: 1.8rem;
+    color: $color-black;
+}
+.right{
+    text-align: right;
+    font-size: 1.8rem;
+    color: $color-black;
+    opacity: .6;
+}
+.btn-forecast{
+    margin-top: .5rem;
+    text-align: center;
+}
+.loader{
+    margin: 20rem auto;
+    text-align: center;
+
+    &__spinner{
+        font-size: 5rem;
+        color: $deep-blue-3;
+        transform-origin: 44% 50%;
+        animation: rotate 1.5s infinite linear; 
+    }
+}
+

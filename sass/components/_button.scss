@@ -1,0 +1,31 @@
+.btn{
+    padding: 1.25rem 3rem;    
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);    
+    border-radius: 2rem;
+    cursor: pointer;
+    color: $color-white;
+    font-size: 1.5rem;
+    text-transform: capitalize; 
+    @include respond(tab-port){
+        padding: 1.4rem 3rem;
+    }
+}
+.btn-search{    
+    margin-left: -4rem;
+    z-index: 2;
+    transition: all .3s;
+    outline: none;
+    border: none;
+    // padding: 1.25rem 3rem;
+    @include respond(big-phone){
+        margin-left: -12rem;
+    }
+    @include respond(small-phone){
+        margin-left: -11rem;
+    }
+    
+}
+.btn:hover{
+    transform: scaleX(1.05);    
+}

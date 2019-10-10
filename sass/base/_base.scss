@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*
+*::before,
+*::after{
+    box-sizing: border-box;
+} 
+html{
+    font-size: 62.5%;
+
+    
+    
+    @include respond(tab-land){
+        font-size: 56.25%;
+    }
+    @include respond(tab-port){
+        font-size: 50%;
+    }
+    @include respond(big-phone){
+        font-size: 40%;
+    }
+    @include respond(phone){
+        font-size: 30%;
+    }
+    @include respond(small-phone){
+        font-size: 25%;
+    }
+    @include respond(big-screen){
+        font-size: 75%;
+    }
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.7;   
+    color: $color-grey-dark;
+} 

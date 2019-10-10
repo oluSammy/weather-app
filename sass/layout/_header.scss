@@ -1,0 +1,106 @@
+.header{
+    background-color: $color-grey-light-2;    
+    margin: 0 2rem;
+    
+    &__top{
+        margin: 0 2rem;
+        padding-top: 4rem;
+        @include clearfix;
+
+        &-form{
+            @include clearfix;
+            margin-left: 15rem; 
+            margin-right: 5%;
+
+            @include respond(small-phone){
+                margin-left: 8rem;
+            }
+        }
+    }
+    &__text{
+        @include respond(phone){
+            margin-top: 3rem;
+            margin-left: 18rem;
+        }
+        @include respond(small-phone){
+            margin-left: 15rem;
+        }
+    }
+    &__text p{
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $color-bluer;
+        line-height: 1.4;
+        @include respond(tab-port){
+            font-size: 1.5rem;
+        }
+        
+        
+    }
+    &__text-primary p{ 
+        letter-spacing: 5px;
+        & span{
+            color: $color-black;
+            font-weight: 800
+        }
+        @include respond(big-phone){
+            letter-spacing: 2px;
+        }
+    }
+    &__date{
+        padding:3rem;
+        margin: 0 auto;
+        width: 35%;
+        letter-spacing: 2px;
+        @include respond(phone){
+            width: 45%;
+        }
+        @include respond(small-phone){
+            margin-left: 17rem;
+            width: 47%;
+        }
+    }
+    &__date p{ 
+        font-size: 3rem;
+        color: $color-bluer;
+        font-weight: 300;
+    }
+}
+.left{
+    float: left;
+}
+.logo{
+    height: 5rem;
+}
+.search-field{
+    padding: 1.3rem 6rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    z-index: 1;
+    transition: all .3s;
+
+    @include respond(big-phone){
+        padding: .9rem 3rem;
+    }
+    @include respond(phone){
+        padding: .63rem 3rem;
+    }
+    @include respond(small-phone){
+        padding: .35rem 2.5rem;
+    }
+}
+.search-field:focus{
+    transform: translateY(-2px);
+    box-shadow: 0 0.7rem 3rem rgba(7, 7, 7, 0.08);
+}
+.search-field:focus + .btn-search {
+    transform: translateY(-2px);
+    box-shadow: 0 0.7rem 3rem rgba(7, 7, 7, 0.08);
+}
+::-webkit-input-placeholder{
+    font-size: 1.3rem;
+    opacity: .5;
+    font-weight: 700;
+}
