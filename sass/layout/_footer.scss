@@ -6,7 +6,11 @@ footer a{
     font-size: 3rem;
     color: $deep-blue-2;
     margin-bottom: .5rem;
-    display: block;
+    // display: block;
+    @include respond(small-phone){
+        margin-left: 4rem;  
+        
+    }
     &__name{
         font-size: 2rem;
         color: $color-white;

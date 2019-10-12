@@ -25,7 +25,7 @@ html{
         font-size: 30%;
     }
     @include respond(small-phone){
-        font-size: 25%;
+        font-size: 28%;
     }
     @include respond(big-screen){
         font-size: 75%;

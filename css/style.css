@@ -36,7 +36,7 @@ html {
       font-size: 30%; } }
   @media (max-width: 20.3em) {
     html {
-      font-size: 25%; } }
+      font-size: 28%; } }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -194,8 +194,10 @@ footer a {
 .twitter {
   font-size: 3rem;
   color: #0033cc;
-  margin-bottom: .5rem;
-  display: block; }
+  margin-bottom: .5rem; }
+  @media (max-width: 20.3em) {
+    .twitter {
+      margin-left: 4rem; } }
   .twitter__name {
     font-size: 2rem;
     color: #fff;
